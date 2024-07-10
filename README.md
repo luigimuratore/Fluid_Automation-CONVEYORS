@@ -211,7 +211,7 @@ GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical program
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c" width="200" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c" width="300" />
 </div>
 
 It is very important, especially for:
