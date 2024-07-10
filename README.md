@@ -175,7 +175,7 @@ First of all, we have the RUN memory, implemented in the subsystem 1.3, that all
 ##### •	Step4
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619" width="800" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619" width="600" />
 </div>
 
 
@@ -211,7 +211,7 @@ GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical program
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c" width="800" />
 </div>
 
 It is very important, especially for:
@@ -247,7 +247,7 @@ The starting point of the GRAFCET diagram , it is represented by a double square
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873" width="800" />
 </div>
 
 
@@ -316,7 +316,7 @@ As last step we built the model graphically to be able to create animations and 
 ##### •	1 funnel
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/30ed555c-89d0-4b7d-a400-7493d953fd27" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/30ed555c-89d0-4b7d-a400-7493d953fd27" width="800" />
 </div>
 
 After drawing everything we set the line width and the colors.
