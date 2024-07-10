@@ -4,11 +4,11 @@
 
 # Master Degree in Mechatronic Engineer
 
-## FLUID AUTOMATION
+# **FLUID AUTOMATION**
 
-## Task 1
+# **Task 1**
 
-# CONVEYORS
+## CONVEYORS
 
 </div>
 
@@ -22,7 +22,7 @@
 
 ----------------------------------------
 
-## Requirement and Assignment
+## **Requirement and Assignment**
 
 <div align="center">
   <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408" width="900" />
@@ -31,15 +31,15 @@
 
 -----------------
 
-## CHANGES
+## **CHANGES**
 We made some changes to the requirements in order to have more reactive and understandable system. All the changes do not affect either the system operations or the goals and the objectives.
 
-#### 1.	Regarding the time delay of the timers in order to have a more interactive simulations:
+#### 1.	Regarding the **time delay of the timers** in order to have a more interactive simulations:
 ##### • Timer of 20 seconds -> 2 seconds
 ##### • Timer of 60 seconds -> 6 seconds
 ##### • Timer of 40 seconds -> 4 seconds
 
-#### 2.	Regarding the lights in the HMI:
+#### 2.	Regarding the **lights in the HMI**:
 ##### • In situation of failure scenarios, instead of having the same lights with different colours or behaviours to show different failures in case of malfunction we employ different lights in order to highlight the specific type of failure.
 
 ----------------------------------------
@@ -47,7 +47,7 @@ We made some changes to the requirements in order to have more reactive and unde
 
 ## PNEUMATICS
 We used pneumatic pistons to simulate the movements of the boxes,
-we linked each box to the linear movement of the respective piston:
+**we linked each box to the linear movement of the respective piston**:
 ##### • The first piston simulates the first horizontal movement.
 ##### • The second piston simulates the vertical movement.
 ##### • The third one simulate the second horizontal movement.
@@ -58,13 +58,13 @@ For the pneumatic circuit we used:
 ##### • 27x - 2/2 directional valve with 1 stable position (2 ways 2 position directional valves)
 ##### • 6x - sensors (sensor ref. Bidirectional)
 ##### • 6x - restrictors
-We controlled each cylinder by means of three 5 ways 2 stable position directional valves (5/2 directional valve) electrically switched by solenoids on both sides.
+We controlled each cylinder by means of three **5 ways 2 stable position directional valves** (5/2 directional valve) electrically switched by solenoids on both sides.
 
 <div align="center">
   <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4" width="800" />
 </div>
 
-Since we needed to follow a specific path, composed of 3 linear movements, specifically 2 horizontal and 1 vertical, we could link the translation animations of the box to the linear position of the respective piston.
+Since we needed to follow a specific path, composed of **3 linear movements**, specifically 2 horizontal and 1 vertical, we could link the translation animations of the box to the linear position of the respective piston.
 
 At the end we had 3 boxes:
 ##### • the first one will follow the linear displacement of the first piston
@@ -72,7 +72,7 @@ At the end we had 3 boxes:
 ##### • same as the third one with the third piston.
 We will handle the animation mixing the visibilities of the three boxes.
 
-### Sensors:
+### **Sensors**:
 ##### •	a0: detect the fully instroke piston A (A-) -> it is activated when the piston A is in a rest position and fully retracted.
 ##### •	a1: detect the fully outstroke piston A (A+) -> it is activated when the valve of the piston A is switched, and A is fully extended.
 ##### •	b0: detect the fully instroke piston B (B-) -> it is activated when the piston B is in a rest position and fully retracted.
@@ -84,8 +84,8 @@ We will handle the animation mixing the visibilities of the three boxes.
 ----------------------------------------
 
 ## PLC
-We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
-In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
+We used **Programmable logic controller (PLC)** to handle all the information regarding inputs and outputs and program actions related to a specific situation.
+In particular, we used a **Siemens S7-1200 PLC** with its library in Automation Studio.
 
 <div align="center">
   <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c" width="800" />
@@ -101,11 +101,11 @@ So whenever one of the sensors is activated, an electrical signal comes to the r
 The push-buttons are linked to the HMI buttons and they command the start of a routine depending on different conditions.
 The solenoids are the ones that take the signal to the valve to allow them to commutate and handle to outstroke or the instroke of a cylinder.
 
-#### INPUTS OUTPUTS
+#### **INPUTS OUTPUTS**
 Once we have defined all the inputs in the upper part of the PLC and all the outputs in the bottom one, we moved these data into ladder Code to be able to manage all the system macro actions, routines and subroutines.
 To do this we set the ladder code with normally-open/normally-closed contacts associated to the relative input in the PLC port.
 
-The ports are structured in terms of bytes, bits, and port names:
+The ports are structured in terms of** bytes, bits, and port names**:
 #### •	Digital Inputs and Outputs (I/O) Digital Inputs (I):
 ##### o	Digital inputs are addressed by bytes and bits.
 ##### o	Each byte consists of 8 bits. 
@@ -123,7 +123,7 @@ This structured approach allows for precise control and monitoring of various pr
 
 ## LADDER DIAGRAM
 
-Ladder Diagram is a graphical programming language, it is used to develop software for programmable logic controllers (PLCs). It is one of the standard languages specifies for use with PLCs.
+**Ladder Diagram** is a graphical programming language, it is used to develop software for programmable logic controllers (PLCs). It is one of the standard languages specifies for use with PLCs.
 A program in ladder diagram notation is a circuit diagram that emulates circuits of relay logic hardware.
 As already said in the PLC section, we moved all the information in Ladder Code.
 Here, we built different subsystem and subroutines to handle different scenarios:
@@ -165,7 +165,7 @@ The second subsystem (1 .2) is about the start and stop of the three conveyors b
 The start of conveyor 1 (conveyor 2) is related to both a push-button S1 (S2) and the not coexistence of the opposite conveyor 2 (conveyor 1) .
 
 
-## Step-Transition method
+## **Step-Transition method**
 
 Here we have the Step-Transition method to compute the routine of the conveyors and the boxes.
 First of all, we have the RUN memory, implemented in the subsystem 1.3, that allows to start the loop composed by:
@@ -186,13 +186,13 @@ The stop of conveyor 1 (conveyor 2) is related to the push-button S3 (S4) only i
 After that, a memory is set and take the signal to the last subroutine, where it starts a timer with a predefined time to reset the memory associated to the start of the conveyor (subsystem 1.7).
 
 
-The emergency is handled in every scenario but in different ways: 
+The **emergency** is handled in every scenario but in different ways: 
 ##### •	In the set memory side:
 putting a normally-closed con tac t before every action , so whenever the emergency selector is activated the normally-closed opens the circuit preventing the signal pass , for example activating memory .
 ##### •	In the reset memory side :
 putting a normally-open con tac t in parallel with the other conditions the reset the memory , so whenever the emergency selector is activated the normally-open closes the circuit making the signal pass to reset the memory , for example to stop the conveyors
 
-The failure scenarios are handling in the last subsystem (subsystem 1.8).
+The **failure** scenarios are handling in the last subsystem (subsystem 1.8).
 We defined to types of failure:
 #### •	First failure:
 ##### -	Generic instantaneously failure of conveyor 1 and conveyor 3.
@@ -205,7 +205,7 @@ Each failure can be simulated by switching one of the two selectors in the failu
 
 ----------------------------------------
 
-## GRAFCET
+## **GRAFCET**
 GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical programming language used for designing and implementing sequential control systems in Programmable Logic Controllers (PLCs).
 
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
@@ -223,7 +223,7 @@ Using GRAFCET in our projects helped streamline the development process , improv
 After building every scenarios in the ladder code we moved the pistons’ movements part in the GRAFCET. We built the GRAFCET of the conveyors and box together.
 Structure of GRAFCET:
 
-### 1.	Steps (Etapes) and Actions (Actions)
+### 1.	**Steps (Etapes) and Actions (Actions)**
 We represented the different states in the control process , each step is represented by a square or rectangle , from 1 to 6 .
 We defined the operations to be performed when a specific step is active :
 ##### •	2: A+
@@ -231,26 +231,24 @@ We defined the operations to be performed when a specific step is active :
 ##### •	4 : B-/C+
 ##### •	5 : C-
 
-### 2.	Transi tions (Transitions) and Conditions (Conditions)
+### 2.	**Transitions (Transitions) and Conditions (Conditions)**
 We indicated the conditions under which the process moves from one step to another , they are placed between steps to show the flow from one state to another , represented by horizontal lines with a condition or event that must be satisfied for the transition to occur:
 ##### •	1 : start_box_left + a0
 ##### •	2: a1 + b0
 ##### •	3 : b1 + c0
 ##### •	4 : c1
 
-### 3. Initial Step (Ini tialisation)
+### 3. **Initial Step (Initialisation)**
 The starting point of the GRAFCET diagram , it is represented by a double square and it indicates where the control process begins .
 
 ----------------------------------------
 
 ## HMI
-As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
+As far as the **Human-Machine Interface (HMI)** is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
 <div align="center">
   <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873" width="800" />
 </div>
-
-
 
 The four sections are:
 ##### 1.	Conveyors
@@ -292,12 +290,12 @@ We can then activate again the conveyors and start again the cycles with the box
 
 The FAILURES are handled by the last section of the HMI.
 We have two selectors that simulate two different failure scenarios.
-### •	Failure 1:
+### •	**Failure 1:**
 ##### -	Unknown cause, generic failure.
 ##### -	It stops the conveyor 1 instantaneously and the conveyor 3 after 4 seconds.
 ##### -	The red lamps on the conveyors are turned on.
 ##### -	The yellow lamp in the HMI starts blinking.
-### •	Failure 2:
+### •	**Failure 2:**
 ##### -	Temperature limit is reached.
 ##### -	After 10 seconds the temperature reaches 80 °C, so to avoid motor damages it stops the conveyor 1 instantaneously and the conveyor 3 after 4 seconds.
 ##### -	The red lamps on the conveyors are turned on.
@@ -305,7 +303,7 @@ We have two selectors that simulate two different failure scenarios.
 
 --------------------------------------
 
-## Animations
+## **Animations**
 
 As last step we built the model graphically to be able to create animations and test the system. We created everything from scratch, with lines, round and square shapes, in particular we drew:
 ##### •	4 boxes
@@ -322,9 +320,9 @@ As last step we built the model graphically to be able to create animations and 
 After drawing everything we set the line width and the colors.
 Then we put everything together in order to make a clear system, visible and understandable.
 To be able to control the animations with the routine programmed with Ladder code and GRAFCET we had to connect the objects with variables pre-defined.
-We worked with two types of animations:
-##### •	Visibility
-##### •	Translation
+We worked with **two types of animations:**
+##### •	**Visibility**
+##### •	**Translation**
 
 We have four boxes in the workspace always together, we had to work on their visibility in order to show one box at time.
 The translation is linked to the linear movement of the pistons, as already said, the only movement difference between the two cycle (box from the right and box from the left) is the first one, where the linear movement is positive for the one from the left and negative for the one from the right.
@@ -357,7 +355,7 @@ The visibility is related to the sensors on the pistons:
 
 -----------------------------------------
 
-# FINAL RESULT
+# **FINAL RESULT**
 
 https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/1fd34824-7a1c-4cf1-952f-464663c1ba0b
 
