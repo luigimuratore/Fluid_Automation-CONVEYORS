@@ -62,8 +62,9 @@ We will handle the animation mixing the visibilities of the three boxes.
 ##### •	c0: detect the fully instroke piston C (C-) -> it is activated when the piston C is in a rest position and fully retracted.
 ##### •	c1: detect the fully outstroke piston C (C+) -> it is activated when the valve of the piston C is switched and C is fully extended.
 
- ----------------------------------------
- 
+
+----------------------------------------
+
 ## PLC
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
@@ -97,7 +98,7 @@ The ports are structured in terms of bytes, bits, and port names:
 This structured approach allows for precise control and monitoring of various processes .
 
 ----------------------------------------
- 
+
 ## LADDER DIAGRAM
 
 Ladder Diagram is a graphical programming language, it is used to develop software for programmable logic controllers (PLCs). It is one of the standard languages specifies for use with PLCs.
@@ -297,6 +298,7 @@ The visibility is related to the sensors on the pistons:
 ##### •	visibility box 1 OFF
 ##### •	visibility box 2 OFF
 ##### •	visibility box 3 OFF
+
 
 #### The translation is related to the linear movement of the pistons:
 ##### •	A+: 	Horizontal movement of box 1
