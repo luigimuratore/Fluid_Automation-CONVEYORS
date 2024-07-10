@@ -1,18 +1,20 @@
-FLUID AUTOMATION
+# FLUID AUTOMATION
 
-Task 1
+## Task 1
 
-C O N V E Y O R S
+# C O N V E Y O R S
 
+-----
 
-Muratore Luigi			 s333098 
-Akbarov Iskandar 		s329650
-Muhammad Fatir Noshab	 s331898
+#### Muratore Luigi			 s333098 
+### Akbarov Iskandar 		s329650
+#### Muhammad Fatir Noshab	 s331898
 
-Luigi Mazza
+#### Prof.: Luigi Mazza
 
- 
-CHANGES
+-----
+
+## CHANGES
 We made some changes to the requirements in order to have more reactive and understandable system. All the changes do not affect either the system operations or the goals and the objectives.
 
 1.	Regarding the time delay of the timers in order to have a more interactive simulations:
@@ -24,9 +26,10 @@ We made some changes to the requirements in order to have more reactive and unde
 • In situation of failure scenarios, instead of having the same lights with different colours or behaviours to show different failures in case of malfunction we employ different lights in order to highlight the specific type of failure.
 02 Automation Studio
 
-02 Automation Studio
- 
-PNEUMATICS
+------
+
+
+## PNEUMATICS
 We used pneumatic pistons to simulate the movements of the boxes,
 we linked each box to the linear movement of the respective piston:
 • The first piston simulates the first horizontal movement.
@@ -48,7 +51,8 @@ At the end we had 3 boxes:
 • the second one will do the same with the second piston
 • same as the third one with the third piston.
 We will handle the animation mixing the visibilities of the three boxes.
-03 Pneumatic
+
+
 Sensors:
 •	a0: detect the fully instroke piston A (A-) -> it is activated when the piston A is in a rest position and fully retracted.
 •	a1: detect the fully outstroke piston A (A+) -> it is activated when the valve of the piston A is switched, and A is fully extended.
@@ -58,7 +62,7 @@ Sensors:
 •	c1: detect the fully outstroke piston C (C+) -> it is activated when the valve of the piston C is switched and C is fully extended.
 04 PLC
  
-PLC
+## PLC
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
 
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
@@ -89,9 +93,9 @@ o	Memory bits are addressed by bytes and bits
 o	Memory bits are named starting with "M" followed by the byte and bit number.
 
 This structured approach allows for precise control and monitoring of various processes .
-05 Ladder Code
+
  
-LADDER DIAGRAM
+## LADDER DIAGRAM
 
 Ladder Diagram is a graphical programming language, it is used to develop software for programmable logic controllers (PLCs). It is one of the standard languages specifies for use with PLCs.
 A program in ladder diagram notation is a circuit diagram that emulates circuits of relay logic hardware.
@@ -131,7 +135,7 @@ The second subsystem (1 .2) is about the start and stop of the three conveyors b
 The start of conveyor 1 (conveyor 2) is related to both a push-button S1 (S2) and the not coexistence of the opposite conveyor 2 (conveyor 1) .
 
 
-Step-Transition method
+## Step-Transition method
 
 Here we have the Step-Transition method to compute the routine of the conveyors and the boxes.
 First of all, we have the RUN memory, implemented in the subsystem 1.3, that allows to start the loop composed by:
@@ -164,7 +168,7 @@ We defined to types of failure:
 Everything is clearly visible and understandable from the HMI.
 Each failure can be simulated by switching one of the two selectors in the failure section of the HMI.
  
-GRAFCET
+## GRAFCET
 
 GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical programming language used for designing and implementing sequential control systems in Programmable Logic Controllers (PLCs).
 
@@ -197,9 +201,8 @@ We indicated the conditions under which the process moves from one step to anoth
 •	
 3. Initial Step (Ini tialisation)
 The starting point of the GRAFCET diagram , it is represented by a double square and it indicates where the control process begins .
-07 HMI
  
-HMI
+## HMI
 
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
