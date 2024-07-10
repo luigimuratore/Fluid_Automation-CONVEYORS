@@ -7,7 +7,7 @@
 
 # C O N V E Y O R S
 
------
+----------------------------------------
 
 #### Muratore Luigi			 s333098 
 #### Akbarov Iskandar 		s329650
@@ -15,7 +15,7 @@
 
 #### Prof.: Luigi Mazza
 
------
+----------------------------------------
 
 ## CHANGES
 We made some changes to the requirements in order to have more reactive and understandable system. All the changes do not affect either the system operations or the goals and the objectives.
@@ -28,7 +28,7 @@ We made some changes to the requirements in order to have more reactive and unde
 #### 2.	Regarding the lights in the HMI:
 ##### • In situation of failure scenarios, instead of having the same lights with different colours or behaviours to show different failures in case of malfunction we employ different lights in order to highlight the specific type of failure.
 
-------
+----------------------------------------
 
 
 ## PNEUMATICS
@@ -62,7 +62,7 @@ We will handle the animation mixing the visibilities of the three boxes.
 ##### •	c0: detect the fully instroke piston C (C-) -> it is activated when the piston C is in a rest position and fully retracted.
 ##### •	c1: detect the fully outstroke piston C (C+) -> it is activated when the valve of the piston C is switched and C is fully extended.
 
- -------
+ ----------------------------------------
  
 ## PLC
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
@@ -96,7 +96,7 @@ The ports are structured in terms of bytes, bits, and port names:
 
 This structured approach allows for precise control and monitoring of various processes .
 
-------------
+----------------------------------------
  
 ## LADDER DIAGRAM
 
@@ -171,7 +171,7 @@ We defined to types of failure:
 Everything is clearly visible and understandable from the HMI.
 Each failure can be simulated by switching one of the two selectors in the failure section of the HMI.
 
----------
+----------------------------------------
 
 ## GRAFCET
 GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical programming language used for designing and implementing sequential control systems in Programmable Logic Controllers (PLCs).
@@ -205,7 +205,7 @@ We indicated the conditions under which the process moves from one step to anoth
 ### 3. Initial Step (Ini tialisation)
 The starting point of the GRAFCET diagram , it is represented by a double square and it indicates where the control process begins .
 
----------
+----------------------------------------
 
 ## HMI
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
