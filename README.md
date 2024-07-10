@@ -10,7 +10,7 @@
 -----
 
 #### Muratore Luigi			 s333098 
-### Akbarov Iskandar 		s329650
+#### Akbarov Iskandar 		s329650
 #### Muhammad Fatir Noshab	 s331898
 
 #### Prof.: Luigi Mazza
@@ -55,19 +55,17 @@ At the end we had 3 boxes:
 • same as the third one with the third piston.
 We will handle the animation mixing the visibilities of the three boxes.
 
-
-Sensors:
+### Sensors:
 •	a0: detect the fully instroke piston A (A-) -> it is activated when the piston A is in a rest position and fully retracted.
 •	a1: detect the fully outstroke piston A (A+) -> it is activated when the valve of the piston A is switched, and A is fully extended.
 •	b0: detect the fully instroke piston B (B-) -> it is activated when the piston B is in a rest position and fully retracted.
 •	b1: detect the fully outstroke piston B (B+) -> it is activated when the valve of the piston B is switched, and B is fully extended.
 •	c0: detect the fully instroke piston C (C-) -> it is activated when the piston C is in a rest position and fully retracted.
 •	c1: detect the fully outstroke piston C (C+) -> it is activated when the valve of the piston C is switched and C is fully extended.
-04 PLC
+
  
 ## PLC
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
-
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
 
 To complete the connections, we used :
@@ -82,7 +80,7 @@ The solenoids are the ones that take the signal to the valve to allow them to co
 INPUTS OUTPUTS
 Once we have defined all the inputs in the upper part of the PLC and all the outputs in the bottom one, we moved these data into ladder Code to be able to manage all the system macro actions, routines and subroutines.
 To do this we set the ladder code with normally-open/normally-closed contacts associated to the relative input in the PLC port.
-04 PLC
+
 The ports are structured in terms of bytes, bits, and port names:
 •	Digital Inputs and Outputs (I/O) Digital Inputs (I):
 o	Digital inputs are addressed by bytes and bits.
@@ -112,7 +110,7 @@ o	Piston movements
 o	Stop
 o	Emergency
 o	Failures
-05 Ladder Code
+
 To complete all the required actions and scenarios we used different components in the Ladder Code, in particular:
 • Rung -> to create a horizontal flow handling different conditions.
 • Call –> to call a subsystem to start a subroutine
@@ -122,7 +120,7 @@ To complete all the required actions and scenarios we used different components 
 • Coil -> to activate a coil, for example a solenoid in a valve
 • Memory coil -> to set or reset a memory
 • Timers -> to delay actions, it is possible to define the delay time
-05 Ladder Code
+
 The first block (1) is the main one, it is responsible for calling the subsystems. 
 The first subsystem (1.1) is about the visibility of the boxes.
 By means of normally-open switches and set-reset memories it is responsible for enabling the visibility of the boxes in the animation section.
@@ -172,7 +170,6 @@ Everything is clearly visible and understandable from the HMI.
 Each failure can be simulated by switching one of the two selectors in the failure section of the HMI.
  
 ## GRAFCET
-
 GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical programming language used for designing and implementing sequential control systems in Programmable Logic Controllers (PLCs).
 
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
@@ -187,7 +184,7 @@ Using GRAFCET in our projects helped streamline the development process , improv
 After building every scenarios in the ladder code we moved the pistons’ movements part in the GRAFCET. We built the GRAFCET of the conveyors and box together.
 Structure of GRAFCET:
 
-1.	Steps (Etapes) and Actions (Actions)
+### 1.	Steps (Etapes) and Actions (Actions)
 We represented the different states in the control process , each step is represented by a square or rectangle , from 1 to 6 .
 We defined the operations to be performed when a specific step is active :
 •	2: A+
@@ -195,18 +192,18 @@ We defined the operations to be performed when a specific step is active :
 •	4 : B-/C+
 •	5 : C-
 
-2.	Transi tions (Transitions) and Conditions (Conditions)
+### 2.	Transi tions (Transitions) and Conditions (Conditions)
 We indicated the conditions under which the process moves from one step to another , they are placed between steps to show the flow from one state to another , represented by horizontal lines with a condition or event that must be satisfied for the transition to occur:
 •	1 : start_box_left + a0
 •	2: a1 + b0
 •	3 : b1 + c0
 •	4 : c1
 •	
-3. Initial Step (Ini tialisation)
+### 3. Initial Step (Ini tialisation)
 The starting point of the GRAFCET diagram , it is represented by a double square and it indicates where the control process begins .
- 
-## HMI
 
+ 
+## HMI
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
 The four sections are:
@@ -300,6 +297,6 @@ c1:
 •	
 The translation is related to the linear movement of the pistons:
 •	A+: 	Horizontal movement of box 1
-•	B+:	Vertical movement of box 2
+•	B+:	  Vertical movement of box 2
 •	C+: 	Horizontal movement of box 3
  
