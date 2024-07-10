@@ -275,27 +275,27 @@ We worked with two types of animations:
 We have four boxes in the workspace always together, we had to work on their visibility in order to show one box at time.
 The translation is linked to the linear movement of the pistons, as already said, the only movement difference between the two cycle (box from the right and box from the left) is the first one, where the linear movement is positive for the one from the left and negative for the one from the right.
 The visibility is related to the sensors on the pistons:
-a0: 
+### a0: 
 •	visibility box 1 ON
 •	visibility box 2 OFF
 •	visibility box 3 OFF
 
-a1:
+#### a1:
 •	visibility box 1 OFF
 •	visibility box 2 ON
 •	visibility box 3 OFF
 
-b1:
+#### b1:
 •	visibility box 1 OFF
 •	visibility box 2 OFF
 •	visibility box 3 ON
 
-c1:
+#### c1:
 •	visibility box 1 OFF
 •	visibility box 2 OFF
 •	visibility box 3 OFF
-•	
-The translation is related to the linear movement of the pistons:
+
+#### The translation is related to the linear movement of the pistons:
 •	A+: 	Horizontal movement of box 1
 •	B+:	  Vertical movement of box 2
 •	C+: 	Horizontal movement of box 3
