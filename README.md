@@ -17,6 +17,13 @@
 
 ----------------------------------------
 
+## Requirement and Assignment
+
+![collage_requirements](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408)
+
+
+-----------------
+
 ## CHANGES
 We made some changes to the requirements in order to have more reactive and understandable system. All the changes do not affect either the system operations or the goals and the objectives.
 
