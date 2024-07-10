@@ -1,3 +1,5 @@
+![politoLOGOpng](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/5f3d57cd-3b02-4956-a602-47f51088405e)
+
 ## POLITECNICO DI TORINO
 #### Master Degree in Mechatronic Engineer
 
@@ -53,6 +55,8 @@ For the pneumatic circuit we used:
 ##### • 6x - restrictors
 We controlled each cylinder by means of three 5 ways 2 stable position directional valves (5/2 directional valve) electrically switched by solenoids on both sides.
 
+![pneumatic](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4)
+
 Since we needed to follow a specific path, composed of 3 linear movements, specifically 2 horizontal and 1 vertical, we could link the translation animations of the box to the linear position of the respective piston.
 
 At the end we had 3 boxes:
@@ -75,6 +79,8 @@ We will handle the animation mixing the visibilities of the three boxes.
 ## PLC
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
+
+![PLCscheme](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c)
 
 To complete the connections, we used :
 ##### •	Normally-open proximity switch
@@ -121,6 +127,8 @@ Here, we built different subsystem and subroutines to handle different scenarios
 ##### o	Emergency
 ##### o	Failures
 
+![ladder](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ea2702cd-60c8-463e-a858-ce992b4639a1)
+
 To complete all the required actions and scenarios we used different components in the Ladder Code, in particular:
 ##### • Rung -> to create a horizontal flow handling different conditions.
 ##### • Call –> to call a subsystem to start a subroutine
@@ -155,6 +163,8 @@ First of all, we have the RUN memory, implemented in the subsystem 1.3, that all
 ##### •	Step3
 ##### •	Step4
 
+![step+actions](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619)
+
 Run is set only if both the push-button is pressed and the conveyor associated to that side is already turned on.
 After that we associated the steps to the variable of the PLC output that will move the respective valve and consequently the piston (subsystem 1 .4) .adder Code
 The stop and emergency phases are handled by the last two subroutines 1.6 and 1.7.
@@ -185,6 +195,8 @@ Each failure can be simulated by switching one of the two selectors in the failu
 GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical programming language used for designing and implementing sequential control systems in Programmable Logic Controllers (PLCs).
 
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
+
+![GRAFCET1](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c)
 
 It is very important, especially for:
 ##### •	Clarity and Structure: GRAFCET provides a clear , step-by-step representation of the process, enhancing comprehension and communication among team members .
