@@ -218,6 +218,9 @@ The starting point of the GRAFCET diagram , it is represented by a double square
 ## HMI
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
+![HMI](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873)
+
+
 The four sections are:
 ##### 1.	Conveyors
 ##### 2.	Boxes
@@ -269,6 +272,10 @@ We have two selectors that simulate two different failure scenarios.
 ##### -	The red lamps on the conveyors are turned on.
 ##### -	The yellow lamp in the HMI starts blinking.
 
+--------------------------------------
+
+## Animations
+
 As last step we built the model graphically to be able to create animations and test the system. We created everything from scratch, with lines, round and square shapes, in particular we drew:
 ##### •	4 boxes
 ##### •	3 motors
@@ -276,6 +283,9 @@ As last step we built the model graphically to be able to create animations and 
 ##### •	3 sensors
 ##### •	3 buttonhole
 ##### •	1 funnel
+
+![Animation](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/30ed555c-89d0-4b7d-a400-7493d953fd27)
+
 After drawing everything we set the line width and the colors.
 Then we put everything together in order to make a clear system, visible and understandable.
 To be able to control the animations with the routine programmed with Ladder code and GRAFCET we had to connect the objects with variables pre-defined.
