@@ -24,7 +24,9 @@
 
 ## Requirement and Assignment
 
-![collage_requirements](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408" width="500" />
+</div>
 
 
 -----------------
@@ -58,7 +60,9 @@ For the pneumatic circuit we used:
 ##### • 6x - restrictors
 We controlled each cylinder by means of three 5 ways 2 stable position directional valves (5/2 directional valve) electrically switched by solenoids on both sides.
 
-![pneumatic](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4" width="500" />
+</div>
 
 Since we needed to follow a specific path, composed of 3 linear movements, specifically 2 horizontal and 1 vertical, we could link the translation animations of the box to the linear position of the respective piston.
 
@@ -83,7 +87,9 @@ We will handle the animation mixing the visibilities of the three boxes.
 We used Programmable logic controller (PLC) to handle all the information regarding inputs and outputs and program actions related to a specific situation.
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
 
-![PLCscheme](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c" width="500" />
+</div>
 
 To complete the connections, we used :
 ##### •	Normally-open proximity switch
@@ -130,7 +136,9 @@ Here, we built different subsystem and subroutines to handle different scenarios
 ##### o	Emergency
 ##### o	Failures
 
-![ladder](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ea2702cd-60c8-463e-a858-ce992b4639a1)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ea2702cd-60c8-463e-a858-ce992b4639a1" width="500" />
+</div>
 
 To complete all the required actions and scenarios we used different components in the Ladder Code, in particular:
 ##### • Rung -> to create a horizontal flow handling different conditions.
@@ -166,7 +174,10 @@ First of all, we have the RUN memory, implemented in the subsystem 1.3, that all
 ##### •	Step3
 ##### •	Step4
 
-![step+actions](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619" width="500" />
+</div>
+
 
 Run is set only if both the push-button is pressed and the conveyor associated to that side is already turned on.
 After that we associated the steps to the variable of the PLC output that will move the respective valve and consequently the piston (subsystem 1 .4) .adder Code
@@ -199,7 +210,9 @@ GRAFCET (GRAphe Fonctionnel de Commande Etape Transition) is a graphical program
 
 It visually represents the states and transitions of an automated process, making it easier to understand and debug complex sequences.
 
-![GRAFCET1](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ca7988d7-15f5-470b-8e11-b1857483fd1c" width="500" />
+</div>
 
 It is very important, especially for:
 ##### •	Clarity and Structure: GRAFCET provides a clear , step-by-step representation of the process, enhancing comprehension and communication among team members .
@@ -233,7 +246,10 @@ The starting point of the GRAFCET diagram , it is represented by a double square
 ## HMI
 As far as the Human-Machine Interface (HMI) is concerned, we built a simple panel composed of four sections from where we can control the whole system.
 
-![HMI](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/98968b46-842d-4d75-a8ef-1e33b17fa873" width="500" />
+</div>
+
 
 
 The four sections are:
@@ -299,7 +315,9 @@ As last step we built the model graphically to be able to create animations and 
 ##### •	3 buttonhole
 ##### •	1 funnel
 
-![Animation](https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/30ed555c-89d0-4b7d-a400-7493d953fd27)
+<div align="center">
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/30ed555c-89d0-4b7d-a400-7493d953fd27" width="500" />
+</div>
 
 After drawing everything we set the line width and the colors.
 Then we put everything together in order to make a clear system, visible and understandable.
