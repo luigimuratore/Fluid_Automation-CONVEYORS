@@ -333,4 +333,12 @@ The visibility is related to the sensors on the pistons:
 ##### •	A+: 	Horizontal movement of box 1
 ##### •	B+:	  Vertical movement of box 2
 ##### •	C+: 	Horizontal movement of box 3
- 
+
+-----------------------------------------
+
+# FINAL RESULT
+
+https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/1fd34824-7a1c-4cf1-952f-464663c1ba0b
+
+
+------------------------------------
