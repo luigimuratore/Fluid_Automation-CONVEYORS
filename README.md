@@ -25,7 +25,7 @@
 ## Requirement and Assignment
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/cc14e05d-af88-408a-ab0d-30bba1057408" width="900" />
 </div>
 
 
@@ -61,7 +61,7 @@ For the pneumatic circuit we used:
 We controlled each cylinder by means of three 5 ways 2 stable position directional valves (5/2 directional valve) electrically switched by solenoids on both sides.
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/2a109c3b-f1c4-49ec-b628-ffc9949c1db4" width="800" />
 </div>
 
 Since we needed to follow a specific path, composed of 3 linear movements, specifically 2 horizontal and 1 vertical, we could link the translation animations of the box to the linear position of the respective piston.
@@ -88,7 +88,7 @@ We used Programmable logic controller (PLC) to handle all the information regard
 In particular, we used a Siemens S7-1200 PLC with its library in Automation Studio.
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/75aac2f0-b5b5-4409-9b70-348235f7ab5c" width="800" />
 </div>
 
 To complete the connections, we used :
@@ -137,7 +137,7 @@ Here, we built different subsystem and subroutines to handle different scenarios
 ##### o	Failures
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ea2702cd-60c8-463e-a858-ce992b4639a1" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/ea2702cd-60c8-463e-a858-ce992b4639a1" width="800" />
 </div>
 
 To complete all the required actions and scenarios we used different components in the Ladder Code, in particular:
@@ -175,7 +175,7 @@ First of all, we have the RUN memory, implemented in the subsystem 1.3, that all
 ##### •	Step4
 
 <div align="center">
-  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619" width="500" />
+  <img src="https://github.com/luigimuratore/Fluid_Automation-CONVEYORS/assets/126814136/957b0a79-d3a5-42fa-89ef-82a3d7e2a619" width="800" />
 </div>
 
 
